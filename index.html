@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>http method put delete post get </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>POST create an user in DB</h1>
+    <form class="registerForm">
+        <h2 class="FormTitle">create an account</h2>
+        <label for="firstName">firstName:</label><input type="text" class="firstName" name="firstName" required>
+        <label for="lastName">lastName:</label><input type="text" class="lastName" name="lastName" required>
+        <label for="age">age:</label><input type="number" class="age" name="age" required>
+        <label for="email">email:</label><input type="email" class="email" name="email" required>
+        <label for="password">password:</label><input type="password" class="password" name="password" required>
+        <button class="submit">Register</button>
+    </form>
+    <h1>GET Show users from DB</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>firstName</th>
+                <th>lastName</th>
+                <th>age</th>
+                <th>email</th>
+                <th>password</th>
+                <th>Tools</th>
+            </tr>
+        </thead>
+        <tbody class="tableBody">
+        </tbody>
+    </table>
+
+    <!-- delete Modal -->
+    <div class="modal">
+        <h3 class="modal-title">Are you sure you want delete this user !?</h3>
+        <div class="modal-btnBox">
+            <button class="btnModal btnModal-yes">Yes</button><button class="btnModal btnModal-no">No</button>
+        </div>
+    </div>
+
+    <!-- edit modal -->
+    <div class="EditModal">
+    <form class="editForm">
+        <h2 class="FormTitle">Edit user</h2>
+        <label for="editFirstName">firstName:</label><input type="text" class="editFirstName" name="editFirstName" required>
+        <label for="editLastName">lastName:</label><input type="text" class="editLastName" name="editLastName" required>
+        <label for="editAge">age:</label><input type="number" class="editAge" name="editAge" required>
+        <label for="editEmail">email:</label><input type="email" class="editEmail" name="editEmail" required>
+        <label for="editPassword">password:</label><input type="password" class="editPassword" name="editPassword" required>
+        <div class="editmodal-btnBox">  <button class="EditSubmit btn btnE">change</button><button class="EditCancel btn btnE">cancel</button></div>
+    </form>
+</div>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
